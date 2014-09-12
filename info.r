@@ -1,0 +1,5 @@
+name = "Luka Dordevic"
+SID = "22553559"
+email = "luckyluke@berkeley.edu"
+github_name = "LukaDordevic"
+status = "enrolled"
