@@ -1,3 +1,9 @@
+library(RUnit)
+errMsg = function(err) print(paste("ERROR:", err))
+load('hw5-tests.rda')
+
+
+
 # Implement the function "listLengths". Your function should take the
 # follwoing arguments:
 #
@@ -9,10 +15,14 @@
 #   element of <data.list>
 
 listLengths <- function(data.list) {
-
-    # your code here
+      i=1
+      v=vector()
+    while(i<= length(data.list)){
+      v <- c(v, length(data.list[[i]]))
+      i=i+1
+    }
+     return(v) 
 }
-
 tryCatch(checkEquals(list.lengths.t, listLengths(ex3.test2)),
          error=function(err) errMsg(err))
 
@@ -34,8 +44,21 @@ tryCatch(checkEquals(list.lengths.t, listLengths(ex3.test2)),
 # column i and j.
 
 standMatrixVariables <- function(data.matrix) {
-
-    # your code here
+    n=dim(data.matrix)[2]
+    m=matrix(NA,nrow=n,ncol=n) 
+    
+    
+    for(i in 1:n){
+      
+      j=1
+      while(j <= n){
+        m[i,j]= (mean(data.matrix[,j]) - mean(data.matrix[,i])) / sd( c(data.matrix[,i], data.matrix[,j]) ,na.rm=TRUE)
+        j=j+1
+        
+      }
+    }
+   return(m) 
+    
 }
 
 tryCatch(checkEquals(stand.matrix.variables.t,
@@ -43,9 +66,11 @@ tryCatch(checkEquals(stand.matrix.variables.t,
          error=function(err) errMsg(err))
 
 
-# Load in the "babies.csv" dataset for this problem. Implement the function
+# Load in the "babies.csv" dataset for this problem. 
+babies = read.csv('babies.csv')
+#Implement the function
 # "testGroupsGestation" that takes the following arguments:
-#
+
 # <data>: any subset of the babies.csv dataset
 # <group1.idcs>: a numeric vector giving the indices of some subset of <data>
 # <group2.idcs>: a numeric vector giving the indices of some other subset of <data>. 
@@ -62,11 +87,11 @@ tryCatch(checkEquals(stand.matrix.variables.t,
 
 
 testGroupsGestation <- function(data, group1.idcs, group2.idcs,
-                                test.alternative='two.sided') {
+                                test.alternative) {  
 
     stopifnot(!any(group1.idcs %in% group2.idcs))
-
-    # your code here
+    return(t.test(data[group1.idcs,]$gestation, babies[group2.idcs,]$gestation, test.alternative))
+    
 }
 
 tryCatch(checkEquals(test.groups.gestation.t$p.value,
@@ -78,8 +103,7 @@ tryCatch(checkEquals(test.groups.gestation.t$p.value,
 # period for babies of smoking mothers and non-smoking mothers. Store this
 # variable as <smoking.test>
 
-# your code here
-#smoke.idcs <- your code here
-#non.smoke.idcs <- your code here
-#smoking.test <- your code here
+smoke.idcs <- as.numeric(rownames(babies[babies$smoke == 1,]))
+non.smoke.idcs <- as.numeric(rownames(babies[babies$smoke == 0,]))
+smoking.test <- testGroupsGestation(babies,smoke.idcs,non.smoke.idcs, "less")
 
