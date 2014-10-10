@@ -1,4 +1,70 @@
 {
     "login": "LukaDordevic", 
-    "url": "git@github.com:LukaDordevic/stat133.git"
+    "url": "git@github.com:LukaDordevic/stat133.git", 
+    "name": "Luka Dordevic", 
+    "email": "luckyluke@berkeley.edu", 
+    "github_name": "LukaDordevic", 
+    "status": "enrolled", 
+    "grades": {
+        "hw1": {
+            "note": "", 
+            "hash": "ae1f7c86b8bc533a923d4e8522518190a380e648", 
+            "earned": 0, 
+            "possible": 14, 
+            "penalty": 0, 
+            "parts": {
+                "ex1": {
+                    "possible": 14, 
+                    "earned": 0
+                }
+            }
+        }, 
+        "hw2": {
+            "note": "", 
+            "hash": "ae1f7c86b8bc533a923d4e8522518190a380e648", 
+            "earned": 19, 
+            "possible": 22, 
+            "penalty": 0, 
+            "parts": {
+                "hw2_fig": {
+                    "possible": 7, 
+                    "earned": 6
+                }, 
+                "hw2": {
+                    "possible": 15, 
+                    "earned": 13
+                }
+            }
+        }, 
+        "hw3": {
+            "note": "", 
+            "hash": "ae1f7c86b8bc533a923d4e8522518190a380e648", 
+            "earned": 0, 
+            "possible": 32, 
+            "penalty": 0, 
+            "parts": {
+                "hw3": {
+                    "possible": 16, 
+                    "earned": 0
+                }, 
+                "hw3_fig": {
+                    "possible": 16, 
+                    "earned": 0
+                }
+            }
+        }, 
+        "hw4": {
+            "note": "", 
+            "hash": "ae1f7c86b8bc533a923d4e8522518190a380e648", 
+            "earned": 5, 
+            "possible": 31, 
+            "penalty": 0, 
+            "parts": {
+                "hw4": {
+                    "possible": 31, 
+                    "earned": 5
+                }
+            }
+        }
+    }
 }
