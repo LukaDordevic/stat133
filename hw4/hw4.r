@@ -19,9 +19,12 @@ truncate <- function(input.vector, trim) {
 
         stopifnot(0<=trim & trim<=0.5) # this line makes sure trim in [0,0.5]
 
-            # your code here
-
+        truncated.vector = input.vector [input.vector > unname(quantile(input.vector, trim)) & input.vector < unname(quantile(input.vector, 1-trim))]
+        return(truncated.vector)
+      
     }
+
+# truncated.vector = truncate(input.vector, trim)
 
 tryCatch(checkEquals(c(2, 3, 4), truncate(1:5, trim=0.25)), error=function(err)
                   errMsg(err))
@@ -46,9 +49,20 @@ tryCatch(checkIdentical(integer(0), truncate(1:6, trim=0.5)),
 # second the upper bound
 
 outlierCutoff <- function(data) {
-        # your code here
+        i = 1
+        iq=sapply(data, IQR)
+        median_values = sapply(data, median)
+        x <- c()
+          while(i <= dim(data)[2]){
+          x <- c(x, median_values[i] + (iq[i] * 1.5))
+          x <- c(x, median_values[i] - (iq[i] *1.5))
+          i=i+1
+        }
+        outlier.cutoffs = matrix (x, nrow=2, ncol = dim(data)[2])
+        return(outlier.cutoffs)
 
 }
+outlier.cutoffs = outlierCutoff(data)
 
 tryCatch(checkIdentical(outlier.cutoff.t, outlierCutoff(ex1.test)),
                   error=function(err) errMsg(err))
@@ -73,12 +87,34 @@ tryCatch(checkIdentical(outlier.cutoff.t, outlierCutoff(ex1.test)),
 #   unacceptably high rates of outliers (i.e. greater than <max.outliers>) have
 #   been removed.
 
+is.between <- function(x, a, b) {
+  (x - a)  *  (b - x) > 0
+}
+
+
 removeOutliers <- function(data, max.outlier.rate) {
 
         stopifnot(max.outlier.rate>=0 & max.outlier.rate<=1)
+        
+        p=c()
+        m = dim(data)[2]
+        i=1
+       while (i < dim(data)[1]){
+        n = sum (as.numeric (is.between (data[i,], rev(outlier.cutoffs[2,]), rev(outlier.cutoffs[1,]))))
+        if(1 - n/m > max.outlier.rate){
+         p = c(p, i)
+         i = i+1
+          
+        }
+       else {
+         i = i+1
+       }
+       }
+       print(p)
+       
+}
 
-            # your code here
-    }
+subset.data = data [-removeOutliers(data, max.outlier.rate),]
 
 tryCatch(checkEquals(remove.outlier.t, removeOutliers(ex1.test, 0.25), ),
                   error=function(err) errMsg(err))
@@ -102,8 +138,34 @@ tryCatch(checkEquals(remove.outlier.t, removeOutliers(ex1.test, 0.25), ),
 #   matrix.
 
 meanByLevel <- function(data) {
-
-        # your code here
+              i=1
+        while(i <= dim(data)[2]){
+          if(is.factor(data[,i])){
+            
+            m = matrix (, nrow = nlevels(data[,i]) , ncol = dim(data)[2] - 1)
+            
+            f=i
+            break
+          }
+          else i=i+1
+        }
+        i=1
+        k=1
+        while(i <= dim(data)[2]-1){
+        if(!is.factor(data[,i])){
+          
+          m[1:nlevels(data[,f]) , k] = as.numeric (tapply ( data[,i], data[,f], mean ))
+          
+          i=i+1
+          k=k+1
+        }
+        else {
+          k=i 
+          i=i+1
+        }
+        }
+        return(m)
+ 
 }
 
 tryCatch(checkIdentical(mean.by.level.t, meanByLevel(iris), checkNames=F),
@@ -132,8 +194,36 @@ tryCatch(checkIdentical(mean.by.level.t, meanByLevel(iris), checkNames=F),
 
 stdLevelDiff <- function(data) {
 
-        # your code here
+             m=meanByLevel(data)
+             i=1
+             while(i <= dim(data)[2]){
+               if(is.factor(data[,i])){
+                  f=i
+                 break
+               }
+               else i=i+1
+             }
+             
+             a=1
+             b=1
+             while(a <= dim(data)[2]-1){
+               if(!is.factor(data[,a])){
+                 
+                 m[1: nlevels(data[,f]) , b ] = abs(mean(data[,a]) - m[1: nlevels(data[,f]) ,b]) / sd(data[,a])
+                 
+                 a=a+1
+                 b=b+1
+               }
+               else {
+                 b=a 
+                 a=a+1
+               }
+             }
+             print(m)
+                            
 }
+
+level.diff <- stdLevelDiff(data)
 
 tryCatch(checkIdentical(std.level.diff.t, abs(stdLevelDiff(iris)), checkNames=F),
                   error=function(err) errMsg(err))
@@ -159,9 +249,18 @@ tryCatch(checkIdentical(std.level.diff.t, abs(stdLevelDiff(iris)), checkNames=F)
 
 simpleNormSim <- function(means, sim.size=50, var=1) {
 
-        # your code here
+        i=1
+        l=vector("list", length(means))
+        
+        while(i <= length(means)){
+          l[[i]] = rnorm(sim.size, means[i], var)
+          i=i+1
+        }
+        return(l)
 }
 
+
+simulation <- simpleNormSim(means, sim.size=50, var=1)
 set.seed(47)
 tryCatch(checkIdentical(simple.norm.sim.t, simpleNormSim(c(25, 50, 75))),
                   error=function(err) errMsg(err))
