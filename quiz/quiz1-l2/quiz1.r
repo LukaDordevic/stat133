@@ -19,7 +19,8 @@
 
 
 
-# Please create the following two subsets and store them with the indicated names:
+# Please create two new data frames with the following two subsets
+# and store them with the indicated names:
 # 1) houses whose bsqft is strictly greater than <mean.bsqft>:  <bsft.greater>
 # 2) houses whose bsqft is less than or equal to  <mean.bsqft>: <bsqft.less>
 
