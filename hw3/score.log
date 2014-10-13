@@ -5,6 +5,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -13,10 +14,21 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(n.wr, sol$n.wr) : object 'n.wr' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -25,10 +37,21 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(n.wr, sol$n.wr) : object 'n.wr' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -37,6 +60,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(n.wr, sol$n.wr) : object 'n.wr' not found
 
@@ -45,6 +78,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -53,10 +87,21 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wr.name, sol$wr.name) : object 'wr.name' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -65,10 +110,21 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wr.name, sol$wr.name) : object 'wr.name' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -77,6 +133,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wr.name, sol$wr.name) : object 'wr.name' not found
 
@@ -85,6 +151,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -93,11 +160,22 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(times_sec, sol$times_sec) : 
   object 'times_sec' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -106,11 +184,22 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(times_sec, sol$times_sec) : 
   object 'times_sec' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -119,6 +208,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(times_sec, sol$times_sec) : 
   object 'times_sec' not found
@@ -128,6 +227,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -136,10 +236,21 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(new_year, sol$new_year) : object 'new_year' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -148,10 +259,21 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(new_year, sol$new_year) : object 'new_year' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -160,6 +282,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(new_year, sol$new_year) : object 'new_year' not found
 
@@ -168,6 +300,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -176,11 +309,22 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wr1500m[1:6], sol$wr1500m.1) : 
   object 'wr1500m' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -189,11 +333,22 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wr1500m[1:6], sol$wr1500m.1) : 
   object 'wr1500m' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -202,6 +357,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wr1500m[1:6], sol$wr1500m.1) : 
   object 'wr1500m' not found
@@ -211,6 +376,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -219,10 +385,21 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wr1500m, sol$wr1500m) : object 'wr1500m' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -231,10 +408,21 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wr1500m, sol$wr1500m) : object 'wr1500m' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -243,6 +431,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wr1500m, sol$wr1500m) : object 'wr1500m' not found
 
@@ -251,6 +449,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -259,11 +458,22 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(GDP_per_person, sol$GDP_per_person) : 
   object 'GDP_per_person' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -272,11 +482,22 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(GDP_per_person, sol$GDP_per_person) : 
   object 'GDP_per_person' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -285,6 +506,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(GDP_per_person, sol$GDP_per_person) : 
   object 'GDP_per_person' not found
@@ -294,6 +525,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -302,10 +534,21 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(top5, sol$top5) : object 'top5' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -314,10 +557,21 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(top5, sol$top5) : object 'top5' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -326,6 +580,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(top5, sol$top5) : object 'top5' not found
 
@@ -334,6 +598,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -342,10 +607,21 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wonMedal, sol$wonMedal) : object 'wonMedal' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -354,10 +630,21 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wonMedal, sol$wonMedal) : object 'wonMedal' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -366,6 +653,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(wonMedal, sol$wonMedal) : object 'wonMedal' not found
 
@@ -374,6 +671,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -382,11 +680,22 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(n.athletes, sol$n.athletes) : 
   object 'n.athletes' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -395,11 +704,22 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(n.athletes, sol$n.athletes) : 
   object 'n.athletes' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -408,6 +728,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(n.athletes, sol$n.athletes) : 
   object 'n.athletes' not found
@@ -417,6 +747,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -425,11 +756,22 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(frac.women, sol$frac.women) : 
   object 'frac.women' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -438,11 +780,22 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(frac.women, sol$frac.women) : 
   object 'frac.women' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -451,6 +804,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(frac.women, sol$frac.women) : 
   object 'frac.women' not found
@@ -460,6 +823,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -468,10 +832,21 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(n.sports, sol$n.sports) : object 'n.sports' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -480,10 +855,21 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(n.sports, sol$n.sports) : object 'n.sports' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -492,6 +878,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(n.sports, sol$n.sports) : object 'n.sports' not found
 
@@ -500,6 +896,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -508,10 +905,21 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(athTab, sol$athTab) : object 'athTab' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -520,10 +928,21 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(athTab, sol$athTab) : object 'athTab' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -532,6 +951,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(athTab, sol$athTab) : object 'athTab' not found
 
@@ -540,6 +969,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -548,11 +978,22 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(set.beside, sol$set.beside) : 
   object 'set.beside' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -561,11 +1002,22 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(set.beside, sol$set.beside) : 
   object 'set.beside' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -574,6 +1026,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(set.beside, sol$set.beside) : 
   object 'set.beside' not found
@@ -583,6 +1045,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -591,10 +1054,21 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(athTab2, sol$athTab2) : object 'athTab2' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -603,10 +1077,21 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(athTab2, sol$athTab2) : object 'athTab2' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -615,6 +1100,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(athTab2, sol$athTab2) : object 'athTab2' not found
 
@@ -623,6 +1118,7 @@ ERROR:root:... Expecting: True
 ERROR:root:... But got:   Traceback error
 ERROR:root:Got exception:
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -631,11 +1127,22 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(orderSport, sol$orderSport) : 
   object 'orderSport' not found
 
 ERROR:root:Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -644,11 +1151,22 @@ ERROR:root:Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(orderSport, sol$orderSport) : 
   object 'orderSport' not found
 
 Traceback (most recent call last):
+<<<<<<< HEAD
   File "c:\Users\User\Anaconda\lib\site-packages\gradebook\score.py", line 180, in check
     result = eval(command, g)
   File "<string>", line 1, in <module>
@@ -657,6 +1175,16 @@ Traceback (most recent call last):
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 166, in __call__
     return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
   File "c:\Users\User\Anaconda\lib\site-packages\rpy2\robjects\functions.py", line 99, in __call__
+=======
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29
     res = super(Function, self).__call__(*new_args, **new_kwargs)
 RRuntimeError: Error in all.equal(orderSport, sol$orderSport) : 
   object 'orderSport' not found
@@ -709,3 +1237,7 @@ ERROR:root:... But got:   n
 ERROR:root:(1 points) Checking Does the title and the plot look okay?
 ERROR:root:... Expecting: False
 ERROR:root:... But got:   n
+<<<<<<< HEAD
+=======
+INFO:root:You got a 0 out of 32.
+>>>>>>> 057c0fa098800d5eda69129afc5ebf293b519f29

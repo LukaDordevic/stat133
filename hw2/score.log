@@ -19,8 +19,8 @@ INFO:root:(1 points) R('all.equal(all.housing.variable, sol$all.housing.variable
 ERROR:root:(1 points) Checking R('all.equal(all.housing.variable, sol$all.housing.variables.obj)')[0]
 ERROR:root:... Expecting: True
 ERROR:root:... But got:   15 string mismatches
-INFO:root:(1 points) R('all.equal(local.cities, sol$local.cities)')[0] is True
-INFO:root:(1 points) R('all.equal(some.housing.variables, sol$some.housing.variables)')[0] is True
+INFO:root:(1 points) R('all(local.cities %in% sol$local.cities) & length(local.cities)==length(sol$local.cities)')[0] is True
+INFO:root:(1 points) R('all(some.housing.variables %in% sol$some.housing.variables) & length(some.housing.variables) == length(sol$some.housing.variables)')[0] is True
 ERROR:root:(1 points) Checking R('all.equal(BerkArea$pricePsqft, sol$BerkArea.pps)')[0]
 ERROR:root:... Expecting: True
 ERROR:root:... But got:   target is NULL, current is numeric
@@ -30,3 +30,4 @@ INFO:root:(1 points) R('all.equal(rCols, sol$rCols)')[0] is True
 ERROR:root:(1 points) Checking R('all.equal(brCols, sol$brCols)')[0]
 ERROR:root:... Expecting: True
 ERROR:root:... But got:   'is.NA' value mismatch: 7 in current 0 in target
+INFO:root:You got a 19 out of 22.
