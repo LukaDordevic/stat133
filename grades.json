@@ -38,17 +38,17 @@
         }, 
         "hw3": {
             "note": "", 
-            "hash": "ae1f7c86b8bc533a923d4e8522518190a380e648", 
+            "hash": "bd3c19bfb26c529eccfc23d152cf06bedf860a10", 
             "earned": 0, 
             "possible": 32, 
             "penalty": 0, 
             "parts": {
                 "hw3": {
-                    "possible": 16, 
+                    "possible": 0, 
                     "earned": 0
                 }, 
                 "hw3_fig": {
-                    "possible": 16, 
+                    "possible": 32, 
                     "earned": 0
                 }
             }
@@ -66,5 +66,6 @@
                 }
             }
         }
-    }
+    }, 
+    "section": "lab2"
 }
