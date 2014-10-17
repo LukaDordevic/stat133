@@ -1,0 +1,105 @@
+INFO:root:Executed R('load(\'../../instructor/assignments/quiz/quiz1-l2/quiz1-l2-tests.rda\')')
+INFO:root:(1 points) R('all.equal(mean.bsqft, test$var1)')[0] is True
+INFO:root:(1 points) R('all.equal(med.bsqft, test$var2)')[0] is True
+INFO:root:(1 points) R('all.equal(bsqft.diffs, test$app)')[0] is True
+INFO:root:(1 points) R('all.equal(bsqft.greater, test$sub1)')[0] is True
+INFO:root:(1 points) R('all.equal(bsqft.less, test$sub2)')[0] is True
+ERROR:root:(1 points) Checking R('all.equal(bsqft.greater.price, test$sub3)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(bsqft.greater.price, test$sub3) : 
+  object 'bsqft.greater.price' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(bsqft.greater.price, test$sub3) : 
+  object 'bsqft.greater.price' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(bsqft.greater.price, test$sub3) : 
+  object 'bsqft.greater.price' not found
+
+ERROR:root:(1 points) Checking R('all.equal(bsqft.less.price, test$sub4)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(bsqft.less.price, test$sub4) : 
+  object 'bsqft.less.price' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(bsqft.less.price, test$sub4) : 
+  object 'bsqft.less.price' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(bsqft.less.price, test$sub4) : 
+  object 'bsqft.less.price' not found
+
+INFO:root:Executed R('fun.output <- priceByRooms(test$fun1, test$fun2, test$fun3)')
+ERROR:root:(2 points) Checking R('all.equal(fun.output, test$fun.out)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Mean relative difference: 0.09504498
+ERROR:root:(1 points) Checking correct plot'?
+ERROR:root:... Expecting: False
+ERROR:root:... But got:   n
+INFO:root:(1 points) Is there a title'? is y
+ERROR:root:(1 points) Checking Is the pch set?
+ERROR:root:... Expecting: False
+ERROR:root:... But got:   n
+INFO:root:(1 points) axis label? is y
+INFO:root:You got a 7 out of 13.
