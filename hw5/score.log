@@ -1,0 +1,19 @@
+INFO:root:Executed R('load(\'../../instructor/assignments/hw5/hw5-tests2.rda\')')
+INFO:root:Executed R('listLengths.r <- listLengths(test$listLengths)')
+INFO:root:(3 points) R('all.equal(listLengths.r, sol$listLengths)')[0] is True
+INFO:root:(1 points) R('all.equal(length(listLengths.r), 5)')[0] is True
+INFO:root:Executed R('standMatrixVariables.r1 <- abs(standMatrixVariables(test$standMatrixVariables.1))')
+INFO:root:(1 points) R('all.equal(standMatrixVariables.r1, sol$standMatrixVariables.1, check.attributes=F, tolerence=1e-4)')[0] is True
+INFO:root:Executed R('standMatrixVariables.r2 <- abs(standMatrixVariables(test$standMatrixVariables.2))')
+INFO:root:(3 points) R('all.equal(standMatrixVariables.r2, sol$standMatrixVariables.2, check.attributes=F, tolerence=1e-4)')[0] is True
+INFO:root:(1 points) R('all.equal(dim(standMatrixVariables.r2), c(3, 3))')[0] is True
+INFO:root:(1 points) R('all.equal(class(standMatrixVariables.r2), \'matrix\')')[0] is True
+INFO:root:Executed R('tGG.r1 <- testGroupsGestation(test$tGG.1, test$tGG.g1.1, test$tGG.g2.1, test.alternative="greater")')
+INFO:root:(1 points) R('all.equal(tGG.r1$p.value, sol$testGroupGestation.1, check.attributes=F, tolerence=1e-4)')[0] is True
+INFO:root:Executed R('tGG.r2 <- testGroupsGestation(test$tGG.2, test$tGG.g1.2, test$tGG.g2.2, test.alternative=\'less\')')
+INFO:root:(3 points) R('all.equal(tGG.r2$p.value, sol$testGroupGestation.2, check.attributes=F, tolerence=1e-4)')[0] is True
+INFO:root:(2 points) R('all.equal(smoking.test$p.value, sol$smoking.test, check.attributes=F, tolerence=1e-3)')[0] is True
+ERROR:root:(2 points) Checking R('all.equal(1-smoking.test$p.value, sol$smoking.test, check.attributes=F, tolerence=1e-3)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Mean relative difference: 0.9818417
+INFO:root:You got a 16 out of 16.

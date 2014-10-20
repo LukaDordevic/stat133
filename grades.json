@@ -38,17 +38,17 @@
         }, 
         "hw3": {
             "note": "", 
-            "hash": "ae1f7c86b8bc533a923d4e8522518190a380e648", 
+            "hash": "bd3c19bfb26c529eccfc23d152cf06bedf860a10", 
             "earned": 0, 
             "possible": 32, 
             "penalty": 0, 
             "parts": {
                 "hw3": {
-                    "possible": 16, 
+                    "possible": 0, 
                     "earned": 0
                 }, 
                 "hw3_fig": {
-                    "possible": 16, 
+                    "possible": 32, 
                     "earned": 0
                 }
             }
@@ -65,6 +65,37 @@
                     "earned": 5
                 }
             }
+        }, 
+        "hw5": {
+            "note": "", 
+            "hash": "2b8d0e18a3fb36517f7043dc9bde2fd537323ebd", 
+            "earned": 16, 
+            "possible": 16, 
+            "penalty": 0, 
+            "parts": {
+                "hw5": {
+                    "possible": 16, 
+                    "earned": 16
+                }
+            }
+        }, 
+        "quiz": {
+            "note": "", 
+            "hash": "08265d22e735687a86f39df37f3d6ad37348bda8", 
+            "earned": 9, 
+            "possible": 13, 
+            "penalty": 0, 
+            "parts": {
+                "quiz1": {
+                    "possible": 9, 
+                    "earned": 7
+                }, 
+                "quiz1_fig": {
+                    "possible": 4, 
+                    "earned": 2
+                }
+            }
         }
-    }
+    }, 
+    "section": "lab2"
 }
