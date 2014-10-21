@@ -21,7 +21,7 @@ x=seq(2, 20, by=2)
 ## In one R command, create a variable [[ y ]] which is a vector and has
 ## all the odd numbers between -1 and -19, in decreasing order
 
-y=seq(-19, -1, by=2)
+y=seq(-1, -19,by= -2)
 
 ## In one R command, create a variable [[ z ]] which is a vector and has
 ## the numbers 1 through 5, each repeated 4 times, in order (so 1 1 1 1 2 2 2 2 etc.)
@@ -118,7 +118,7 @@ fit <- lm(bwt ~ gestation, data=infants)
 ## Plot the line in red and put your own x- and y-axis labels on the plot.
 
 
-plot(infants$gestation, infants$bwt, xlab="Gestation", ylab="Birthweight")
+plot(infants$gestation, infants$bwt, xlab="Gestation", ylab="Birthweight", main="Gestation against Birthdweight")
 abline(-10.0642, 0.4643, col="red")
 
 
