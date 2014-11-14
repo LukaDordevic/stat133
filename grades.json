@@ -1,4 +1,4 @@
- {
+{
     "login": "LukaDordevic", 
     "url": "git@github.com:LukaDordevic/stat133.git", 
     "name": "Luka Dordevic", 
@@ -81,7 +81,7 @@
         }, 
         "quiz": {
             "note": "", 
-            "hash": "08265d22e735687a86f39df37f3d6ad37348bda8", 
+            "hash": "7344feb2b81a8ea9dfd64c98d149ce6ebbfc53f3", 
             "earned": 9, 
             "possible": 13, 
             "penalty": 0, 
@@ -93,6 +93,23 @@
                 "quiz1_fig": {
                     "possible": 4, 
                     "earned": 2
+                }
+            }
+        }, 
+        "midterm": {
+            "note": "", 
+            "hash": "73a85ea749363c66c807eb543bb8f6517e1856a0", 
+            "earned": 21, 
+            "possible": 24, 
+            "penalty": 0, 
+            "parts": {
+                "midterm_fig": {
+                    "possible": 7, 
+                    "earned": 7
+                }, 
+                "midterm": {
+                    "possible": 17, 
+                    "earned": 14
                 }
             }
         }
