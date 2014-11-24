@@ -1,0 +1,1228 @@
+INFO:root:Executed R('load(\'../../instructor/assignments/quiz2/quiz2-l2/quiz2-l2-tests.rda\')')
+INFO:root:Executed R('set.seed(123)')
+INFO:root:Executed R('out1 <- num_students(10)')
+ERROR:root:Got exception on main handler
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "num_students"
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "num_students"
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "num_students"
+
+ERROR:root:(1 points) Checking R('all.equal(length(out1), 1)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out1), 1) : object 'out1' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out1), 1) : object 'out1' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out1), 1) : object 'out1' not found
+
+ERROR:root:(1 points) Checking R('all.equal(out1, sol$out1)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out1, sol$out1) : object 'out1' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out1, sol$out1) : object 'out1' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out1, sol$out1) : object 'out1' not found
+
+INFO:root:Executed R('set.seed(123)')
+INFO:root:Executed R('out2 <- interarrival_times(8)')
+ERROR:root:Got exception on main handler
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "interarrival_times"
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "interarrival_times"
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "interarrival_times"
+
+ERROR:root:(1 points) Checking R('all.equal(length(out2), 8)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out2), 8) : object 'out2' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out2), 8) : object 'out2' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out2), 8) : object 'out2' not found
+
+ERROR:root:(1 points) Checking R('all.equal(out2, sol$out2)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out2, sol$out2) : object 'out2' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out2, sol$out2) : object 'out2' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out2, sol$out2) : object 'out2' not found
+
+INFO:root:Executed R('set.seed(123)')
+INFO:root:Executed R('out3 <- service_times(8)')
+ERROR:root:Got exception on main handler
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "service_times"
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "service_times"
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "service_times"
+
+ERROR:root:(1 points) Checking R('all.equal(length(out3), 8)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out3), 8) : object 'out3' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out3), 8) : object 'out3' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out3), 8) : object 'out3' not found
+
+ERROR:root:(1 points) Checking R('all.equal(out3, sol$out3)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out3, sol$out3) : object 'out3' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out3, sol$out3) : object 'out3' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out3, sol$out3) : object 'out3' not found
+
+INFO:root:Executed R('out4 <- waiting_times(rep(10, 10), c(rep(c(1,11,10), times = 3), 4))')
+ERROR:root:Got exception on main handler
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "waiting_times"
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "waiting_times"
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "waiting_times"
+
+ERROR:root:(1 points) Checking R('all.equal(length(out4), 10)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out4), 10) : object 'out4' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out4), 10) : object 'out4' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(length(out4), 10) : object 'out4' not found
+
+ERROR:root:(1 points) Checking R('all.equal(out4, sol$out4)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out4, sol$out4) : object 'out4' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out4, sol$out4) : object 'out4' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out4, sol$out4) : object 'out4' not found
+
+INFO:root:Executed R('set.seed(123)')
+INFO:root:Executed R('out5 <- queueing_sim(10)')
+ERROR:root:Got exception on main handler
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "queueing_sim"
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "queueing_sim"
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "queueing_sim"
+
+ERROR:root:(1 points) Checking R('all.equal(is.data.frame(out5), T)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in is.data.frame(out5) : object 'out5' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in is.data.frame(out5) : object 'out5' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in is.data.frame(out5) : object 'out5' not found
+
+ERROR:root:(1 points) Checking R('all.equal(dim(out5), c(8,4))')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(out5), c(8, 4)) : object 'out5' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(out5), c(8, 4)) : object 'out5' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(out5), c(8, 4)) : object 'out5' not found
+
+ERROR:root:(1 points) Checking R('all.equal(out5, sol$out5)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out5, sol$out5) : object 'out5' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out5, sol$out5) : object 'out5' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out5, sol$out5) : object 'out5' not found
+
+ERROR:root:(1 points) Checking R('all.equal(is.list(sim500), T)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(is.list(sim500), T) : object 'sim500' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(is.list(sim500), T) : object 'sim500' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(is.list(sim500), T) : object 'sim500' not found
+
+ERROR:root:(1 points) Checking R('all.equal(sim500, sol$sim500)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(sim500, sol$sim500) : object 'sim500' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(sim500, sol$sim500) : object 'sim500' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(sim500, sol$sim500) : object 'sim500' not found
+
+ERROR:root:(1 points) Checking R('all.equal(is.matrix(avg_wait_total), T)')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(is.matrix(avg_wait_total), T) : 
+  object 'avg_wait_total' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(is.matrix(avg_wait_total), T) : 
+  object 'avg_wait_total' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(is.matrix(avg_wait_total), T) : 
+  object 'avg_wait_total' not found
+
+ERROR:root:(1 points) Checking R('all.equal(dim(avg_wait_total), c(2, 500))')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(avg_wait_total), c(2, 500)) : 
+  object 'avg_wait_total' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(avg_wait_total), c(2, 500)) : 
+  object 'avg_wait_total' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(avg_wait_total), c(2, 500)) : 
+  object 'avg_wait_total' not found
+
+ERROR:root:(1 points) Checking R('all.equal(avg_wait_total[1,], sol$avg_wait_total[1,])')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(avg_wait_total[1, ], sol$avg_wait_total[1, ]) : 
+  object 'avg_wait_total' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(avg_wait_total[1, ], sol$avg_wait_total[1, ]) : 
+  object 'avg_wait_total' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(avg_wait_total[1, ], sol$avg_wait_total[1, ]) : 
+  object 'avg_wait_total' not found
+
+ERROR:root:(1 points) Checking R('all.equal(avg_wait_total[2,], sol$avg_wait_total[2,])')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(avg_wait_total[2, ], sol$avg_wait_total[2, ]) : 
+  object 'avg_wait_total' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(avg_wait_total[2, ], sol$avg_wait_total[2, ]) : 
+  object 'avg_wait_total' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(avg_wait_total[2, ], sol$avg_wait_total[2, ]) : 
+  object 'avg_wait_total' not found
+
+ERROR:root:(1 points) Checking R('all.equal(serv_wait_sick(rep(10,10), rep(10, 10), c(0,1,3,2,1)), data.frame(serv = c(10,10,10,10,10,15,15,15,15,15), wait = c(0,0,0,0,1,18,26,31,38,43)))')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(serv_wait_sick(rep(10, 10), rep(10, 10), c(0, 1, 3,  : 
+  could not find function "serv_wait_sick"
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(serv_wait_sick(rep(10, 10), rep(10, 10), c(0, 1, 3,  : 
+  could not find function "serv_wait_sick"
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(serv_wait_sick(rep(10, 10), rep(10, 10), c(0, 1, 3,  : 
+  could not find function "serv_wait_sick"
+
+INFO:root:Executed R('out6 <- serv_wait_sick(rep(8,8), rep(12,8), 1:8)')
+ERROR:root:Got exception on main handler
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "serv_wait_sick"
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "serv_wait_sick"
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "serv_wait_sick"
+
+ERROR:root:(1 points) Checking R('all.equal(dim(out6), c(8, 2))')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(out6), c(8, 2)) : object 'out6' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(out6), c(8, 2)) : object 'out6' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(out6), c(8, 2)) : object 'out6' not found
+
+ERROR:root:(1 points) Checking R('all.equal(out6[,1], sol$out6[,1])')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out6[, 1], sol$out6[, 1]) : object 'out6' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out6[, 1], sol$out6[, 1]) : object 'out6' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out6[, 1], sol$out6[, 1]) : object 'out6' not found
+
+ERROR:root:(1 points) Checking R('all.equal(out6[,2], sol$out6[,2])')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out6[, 2], sol$out6[, 2]) : object 'out6' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out6[, 2], sol$out6[, 2]) : object 'out6' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out6[, 2], sol$out6[, 2]) : object 'out6' not found
+
+INFO:root:Executed R('out7 <- serv_wait_sick(rep(8,3), rep(12,3), 1:3)')
+ERROR:root:Got exception on main handler
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "serv_wait_sick"
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "serv_wait_sick"
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 164, in run
+    exec(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in eval(expr, envir, enclos) : 
+  could not find function "serv_wait_sick"
+
+ERROR:root:(1 points) Checking R('all.equal(dim(out7), c(3, 2))')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(out7), c(3, 2)) : object 'out7' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(out7), c(3, 2)) : object 'out7' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(dim(out7), c(3, 2)) : object 'out7' not found
+
+ERROR:root:(1 points) Checking R('all.equal(out7[,1], sol$out7[,1])')[0]
+ERROR:root:... Expecting: True
+ERROR:root:... But got:   Traceback error
+ERROR:root:Got exception:
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out7[, 1], sol$out7[, 1]) : object 'out7' not found
+
+ERROR:root:Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out7[, 1], sol$out7[, 1]) : object 'out7' not found
+
+Traceback (most recent call last):
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/gradebook/score.py", line 180, in check
+    result = eval(command, g)
+  File "<string>", line 1, in <module>
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/__init__.py", line 246, in __call__
+    res = self.eval(p)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 166, in __call__
+    return super(SignatureTranslatedFunction, self).__call__(*args, **kwargs)
+  File "/Users/Karl/anaconda/lib/python2.7/site-packages/rpy2/robjects/functions.py", line 99, in __call__
+    res = super(Function, self).__call__(*new_args, **new_kwargs)
+RRuntimeError: Error in all.equal(out7[, 1], sol$out7[, 1]) : object 'out7' not found
+
+INFO:root:You got a 3 out of 26.
