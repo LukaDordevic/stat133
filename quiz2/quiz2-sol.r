@@ -17,30 +17,30 @@ num_students <- function(k) {
 # For i = 2, ..., number of students, 
 # student i arrives Y_i minutes after student i - 1 arrives.
 # These Y_i are independently idenitically distributed
-# Exponential random variables with rate 1/4.
+# Exponential random variables with rate 1/5.
 # (This corresponds to the fact that on average,
-# a new student comes to OH every four minutes.)
+# a new student comes to OH every five minutes.)
 
 # Write a function called interarrival_times:
 # Input: <num>: number of students (a number)
-# Output: <inter>: a random sample of num Exponential(1/4) 
+# Output: <inter>: a random sample of num Exponential(1/5) 
 # random variables (a vector of length num)
 interarrival_times <- function(num) {
-  rexp(num, 1/4)
+  rexp(num, 1/5)
 }
 
 # For student i, it takes Z_i minutes for Johnny to answer questions.
 # These Z_i are independently idenitically distributed
-# Exponential random variables with rate 1/6.
+# Exponential random variables with rate 1/7.
 # (This corresponds to the fact that on average,
-# it takes Johnny six minutes to fully answer a student's questions.)
+# it takes Johnny seven minutes to fully answer a student's questions.)
 
 # Write a function called service_times:
 # Input: <num>: number of students (a number)
-# Output: <serv>: a random sample of num Exponential(1/6) 
+# Output: <serv>: a random sample of num Exponential(1/7) 
 # random variables (a vector of length num)
 service_times <- function(num) {
-  rexp(num, 1/6)
+  rexp(num, 1/7)
 }
 
 # Compute the waiting time for each student.
@@ -94,10 +94,10 @@ queueing_sim <- function(k) {
 }
 
 set.seed(1234)
-# Run the simulation 500 times with k = 10. 
+# Run the simulation 500 times with k = 11. 
 # Save the output in a variable called sim500.
 # sim500 is a list of 500 data frames.
-sim500 <- replicate(500, queueing_sim(10), simplify = F)
+sim500 <- replicate(500, queueing_sim(11), simplify = F)
 
 # For each simulation, compute the average waiting time and
 # the average total time spent in OH.
@@ -107,16 +107,16 @@ avg_wait_total <- sapply(sim500, function(df) c(mean(df$wait), mean(df$total)))
 
 #-----------------------------------------------------------------------
 # Suppose Johnny is not feeling well and he needs to take a break of 
-# around 2 minutes for every two students he serves.
+# around 3 minutes for every two students he serves.
 # That is, he takes a break after serving the 2nd student, the 4th student, etc.
 # He stops serving students until the break is over.
-# Also, he needs to take a 15-minute nap right after the fifth student he serve.
+# Also, he needs to take a 17-minute nap right after the fifth student he serve.
 # Again, he is not serving any students during his nap.
-# In addition, he talks more slowly after the 15-minute nap: 
+# In addition, he talks more slowly after the 17-minute nap: 
 # The service times of 6th, 7th, ... students are multiplied by 1.5.
 
 # The break times are independent and each can be modeled
-# by a Normal random variable with mean 2 and variance 2,
+# by a Normal random variable with mean 3 and variance 2,
 # with the condition that whenever the random variable generated is 
 # negative, set it equal to 0.
 # DO NOT INCLUDE THE NAP TIME INTO BREAK TIMES.
@@ -128,7 +128,7 @@ avg_wait_total <- sapply(sim500, function(df) c(mean(df$wait), mean(df$total)))
 # Output:
 # <br_times>: a numeric vector of break times
 break_times <- function(n){
-  br_times <- rnorm(n , mean = 2, sd = sqrt(2))
+  br_times <- rnorm(n , mean = 3, sd = sqrt(2))
   br_times <- br_times * (br_times > 0)
   br_times
 }
@@ -136,7 +136,7 @@ break_times <- function(n){
 # Write a function called serv_wait_sick that computes
 # the service time and the waiting time for each student, taking into account 
 # that Johnny is taking a break from time to time as 
-# described above and a 15-minute nap after serving the fifth student,
+# described above and a 17-minute nap after serving the fifth student,
 # and the service times for 6th, 7th, ... students are multiplied by 1.5:
 # Input: 
 # <inter>: a vector of interrarrival times
@@ -160,7 +160,7 @@ serv_wait_sick <- function(inter, serv, br_times){
         wait[i] <- max(serv[i-1]  + wait[i-1] - inter[i], 0) 
       }  
     } else{
-      wait[i] <- max(serv[i-1]  + wait[i-1] + 15 - inter[i], 0)
+      wait[i] <- max(serv[i-1]  + wait[i-1] + 17 - inter[i], 0)
     }
   }
   data.frame(serv, wait)
@@ -172,7 +172,7 @@ serv_wait_sick <- function(inter, serv, br_times){
 # No need to modify the following code.
 # If your functions work properly, the following code should return TRUE.
 set.seed(12)
-all.equal(break_times(3), c(0.000000, 4.230454, 0.646959), tolerance = 0.001)
+all.equal(break_times(3), c(1.6989161, 0.1749075, 2.6149152), tolerance = 0.001)
 all.equal(serv_wait_sick(rep(10, 10), rep(10, 10), c(0, 1, 3, 2, 1)), 
             data.frame(serv = c(10,10,10,10,10,15,15,15,15,15), 
-                       wait = c(0,0,0,0,1,16,24,29,36,41)))
+                       wait = c(0,0,0,0,1,18,26,31,38,43)))
