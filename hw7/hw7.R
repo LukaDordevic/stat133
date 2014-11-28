@@ -38,21 +38,21 @@ source("computeSJDistance.R")
 # Check the class and dimension of [speeches].  Open the textfile in 
 # an editor and compare it to [speeches]
 
-speeches <- <your code here>
+speeches <- readLines(file("stateoftheunion1790-2012.txt"))
 
 # The speeches are separated by a line with three stars (***).
 # Create a numeric vector [breaks] with the line numbers of ***.
 # Create the variable [n.speeches] a numeric variable with the number of speeches
 # Question: Does every single *** in the file indicate the beginning of a speech?
 
-breaks <- <your code here>
-n.speeches <- <your code here>
+breaks <- grep("[***]", speeches)
+n.speeches <- length(breaks)
 
 # Use the vector [breaks] and [speeches] to create a 
 # character vector [presidents]
 # with the name of the president delivering the address
 
-presidents <- <your code here>
+presidents <- speeches[breaks+3]
 
 # Use [speeches] and the vector [breaks] to create [tempDates], 
 # a character vector with the dates of each speech
@@ -61,10 +61,38 @@ presidents <- <your code here>
 # a character vector [speechMo] with the month of each speech
 # Note: you may need to use two lines of code to create one/both variables.
   
-tempDates <- <your code here>
-  
-speechYr <- <your code here>
-speechMo <- <your code here>
+tempDates <- speeches[breaks+4]
+tempDates <- tempDates[-226]
+tempDates <- tempDates[-224]
+tempDates <- tempDates[-223]
+tempDates <- tempDates[-120]
+
+getyear <- function(date){
+  year=c()
+  for(i in 1:length(date)){
+    date1 = strsplit(date[i], "")[[1]]
+    beg=which(date1 ==",") + 2
+    end=length(date1)
+    year = c(year, substr(date[[i]], beg, end))
+  }
+  return(year)
+}
+
+
+getmonth <- function(date){
+  year=c()
+  for(i in 1:length(date)){
+    date1 = strsplit(date[i], "")[[1]]
+    end=which(date1 ==",") - 4
+    year = c(year, substr(date[[i]], 1, end))
+  }
+  return(year)
+}
+
+
+
+speechYr <- getyear(tempDates)
+speechMo <- getmonth(tempDates)
 
 # Create a list variable [speechesL] which has the full text of each speech.
 # The variable [speechesL] should have one element for each speech.
@@ -85,8 +113,12 @@ speeches <- gsub("U.S.", "US", speeches)
 
 speechesL <- list()
 for(i in 1:n.speeches){
-  <your code here>
-}
+ x=strsplit(paste(speeches[breaks[i] : breaks[i+1] ], collapse= ""), "[.|!|?]")[[1]]
+ speechesL[[i]]=x
+  }
+  
+  
+  
 
 #### Word Vectors 
 # For each speech we are going to collect the following information:
@@ -126,7 +158,8 @@ speechToWords = function(sentences) {
 # Input  : sentences, a character string
 # Output : words, a character vector where each element is one word 
 
-  <your code here>
+  
+  
   
   # return a character vector of all words in the speech
 }
@@ -168,7 +201,7 @@ uniqueWords <- <your code here>
 # Load the dataframe [speechesDF] which has two variables,
 # president and party affiliation (make sure to keep this line in your code):
 
-  load("speeches_dataframe.Rda")
+  load("speeches_dataframe_new.Rda")
 
 ## Now add the following variables to the  dataframe [speechesDF]:
 # yr - year of the speech (numeric) (i.e. [speechYr], created above)
