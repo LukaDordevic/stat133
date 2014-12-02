@@ -54,7 +54,7 @@ outlierCutoff <- function(data) {
         median_values = sapply(data, median)
         x <- c()
           while(i <= dim(data)[2]){
-          x <- c(x, median_values[i] + (iq[i] * 1.5))
+          x <- c(x, median_values[i] + (iq[i] * 1.5))    # switched the lower and upper bound
           x <- c(x, median_values[i] - (iq[i] *1.5))
           i=i+1
         }
@@ -114,9 +114,9 @@ removeOutliers <- function(data, max.outlier.rate) {
        
 }
 
-subset.data = data [-removeOutliers(data, max.outlier.rate),]
+subset.data = ex1.test [-removeOutliers(ex1.test, 0.25),]    
 
-tryCatch(checkEquals(remove.outlier.t, removeOutliers(ex1.test, 0.25), ),
+tryCatch(checkEquals(remove.outlier.t, ex1.test [-removeOutliers(ex1.test, 0.25),]    , ),
                   error=function(err) errMsg(err))
 
 

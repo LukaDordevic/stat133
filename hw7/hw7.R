@@ -46,13 +46,17 @@ speeches <- readLines(file("stateoftheunion1790-2012.txt"))
 # Question: Does every single *** in the file indicate the beginning of a speech?
 
 breaks <- grep("[***]", speeches)
-n.speeches <- length(breaks)
+breaks <- breaks[-226]
+breaks <- breaks[-224]
+breaks <- breaks[-223]
+breaks <- breaks[-120]
+n.speeches <- length(breaks)-1
 
 # Use the vector [breaks] and [speeches] to create a 
 # character vector [presidents]
 # with the name of the president delivering the address
 
-presidents <- speeches[breaks+3]
+presidents <- speeches[breaks[-223]+3]
 
 # Use [speeches] and the vector [breaks] to create [tempDates], 
 # a character vector with the dates of each speech
@@ -61,11 +65,8 @@ presidents <- speeches[breaks+3]
 # a character vector [speechMo] with the month of each speech
 # Note: you may need to use two lines of code to create one/both variables.
   
-tempDates <- speeches[breaks+4]
-tempDates <- tempDates[-226]
-tempDates <- tempDates[-224]
-tempDates <- tempDates[-223]
-tempDates <- tempDates[-120]
+tempDates <- speeches[breaks[-223]+4]
+
 
 getyear <- function(date){
   year=c()
@@ -111,6 +112,7 @@ speeches <- gsub("Mr.", "Mr", speeches)
 speeches <- gsub("Mrs.", "Mrs", speeches)
 speeches <- gsub("U.S.", "US", speeches)
 
+breaks[223]=169429
 speechesL <- list()
 for(i in 1:n.speeches){
  x=strsplit(paste(speeches[breaks[i] : breaks[i+1] ], collapse= ""), "[.|!|?]")[[1]]
@@ -157,22 +159,29 @@ for(i in 1:n.speeches){
 speechToWords = function(sentences) {
 # Input  : sentences, a character string
 # Output : words, a character vector where each element is one word 
-
+  words=paste(sentences, collapse=" ")
+  words=strsplit(words, " ")[[1]]
+  words=gsub( "[[:punct:]]", "",words)
+  words=tolower(words)
+  if(length(grep("Applause.", words))!=0){
+    words=words[-grep("Applause.", words)]
+  }
+  words=words[grep(".", words)]
+  words=wordStem(words)
+  words=words[grep(".", words)]
   
-  
-  
-  # return a character vector of all words in the speech
+  return(words)
 }
 
-#### Apply the function speechToWords() to each speach
+#### Apply the function speechToWords() to each speech
 # Create a list, [speechWords], where each element of the list is a vector
 # with the words from that speech.
-speechWords <- <your code here>
+speechWords <- lapply(speechesL, speechToWords)
 
 # Unlist the variable speechWords (use unlist()) to get a list of all words in all speeches, the create:
 # [uniqueWords] : a vector with every word that appears in the speeches in alphabetic order
 
-uniqueWords <- <your code here>
+uniqueWords <- sort(unique(unlist(speechWords)))
 
 # Create a matrix [wordCount]
 # the number of rows should be the same as the length of [uniqueWords]
@@ -194,8 +203,23 @@ uniqueWords <- <your code here>
 # [1] "a" "b" "c"
 
 # You may want to use an apply statment to first create a list of word vectors, one for each speech.
+  
+# your code to create [wordMat] here
+  wordMat = matrix(,nrow=length(uniqueWords), ncol=length(speechesL))
+  for(i in 1:dim(wordMat)[2]){           #number of cols
+    table1=table(speechWords[[i]])       #number of occurances per word
+    for(j in 1:dim(table1)){
+      letter <- names(table1[j])
+      rhs <- paste0('\\<', letter, '\\>')
+      index.row <- grep(rhs, uniqueWords) 
+      wordMat[index.row, i] = unname(table1[j])
+    }
+  }
 
-# your code to create [wordMat] here:
+
+
+
+
 
 
 # Load the dataframe [speechesDF] which has two variables,
@@ -211,21 +235,28 @@ uniqueWords <- <your code here>
 # chars - number of letters in the speech (use [speechWords] to calculate)
 # sent - number of sentences in the speech (use [speechesL] to calculate this)
 
-words <- <your code here>
-chars <- <your code here>
-sentences <- <your code here>
+words <- sapply(speechWords, length)
+chars <- sapply(lapply(speechWords, nchar), sum)
+sentences <- sapply(lapply(speechesL, length), sum)
 
 # Update the data frame
-speechesDF <- <your code here>
+speechesDF <- data.frame(speechesDF, speechYr, speechMo, words, chars, sentences)
 
 ######################################################################
 ## Create a matrix [presidentWordMat] 
 # This matrix should have one column for each president (instead of one for each speech)
-# and that colum is the sum of all the columns corresponding to speeches make by said president.
+# and that column is the sum of all the columns corresponding to speeches make by said president.
 
 # note that your code will be a few lines...
+speechesDF <- speechesDF[order(speechesDF$Pres),]
+presidentWordMat <- matrix(,ncol=length(unique(presidents)), nrow=3)
+  labels=unname(table(speechesDF[,1]))
+  i=1
+  for(j in 1:length(unique(presidents))){
+    presidentWordMat[,j] <- c(sum(speechesDF[i:(i-1+labels[j]), "words"]), sum(speechesDF[i:(i-1+labels[j]), "chars"]), sum(speechesDF[i:(i-1+labels[j]), "sentences"]))
+    i=i+labels[j]
+  }
   
-presidentWordMat <- <your code here> 
   
 # At the beginning of this file we sourced in a file "computeSJDistance.R"
 # It has the following function:
@@ -239,22 +270,28 @@ presidentWordMat <- <your code here>
 # [docFreq]: vector of the same length as [uniqueWords], 
 # count the number of presidents that used the word
 
-  docFreq <- <your code here>
+  docFreq <- c()
+  for(i in 1:length(uniqueWords)){
+  y=unname(attributes( regexpr(uniqueWords[i], speechesL) ))[[1]]
+  docFreq[i]=length(y[y==1])
+  }
+    
+  
     
 # Call the function computeSJDistance() with the arguments
 # presidentWordMat, docFreq and uniqueWords
 # and save the return value in the matrix [presDist]
 
-presDist <- computeSJDistance( < insert arguments here >)
+presDist <- computeSJDistance(PresidentWordMat, docFreq, uniqueWords)
 
 ## Visuzlise the distance matrix using multidimensional scaling.
 # Call the function cmdscale() with presDist as input.
 # Store the result in the variable [mds] by 
 
-mds <- <your code here>
+mds <- cmdscale(presDist)
 
 # First do a simple plot the results:
-plot(mds)
+plot(mds, xlab="", ylab="", main="Presidents")
 
 # Customize this plot by:
 # -- remove x and y labels and put the title "Presidents" on the plot
@@ -265,11 +302,11 @@ plot(mds)
 # is the party affiliation and the names attribute has the names of the presidents.
 # Hint: the info is in speechesDF$party and speechesDF$Pres
 
-presParty <- <your code here>
+presParty <- unique(paste(speechesDF$party, speechesDF$Pres))
   
 # use rainbow() to pick one unique color for each party (there are 6 parties)
 
-cols <- <your code here>
+cols <- rainbow(6, alpha =1)
 
 # Now we are ready to plot again.
 # First plot mds by calling plot() with type='n' (it will create the axes but not plot the points)
@@ -277,7 +314,7 @@ cols <- <your code here>
 # then call text() with the presidents' names as labels and the color argument
 # col = cols[presParty[rownames(presDist)]]
   
-plot(<your code here>)
+plot(mds, type='n', main="Presidents")
 text(<your code here>)
 
 ### Use hierarchical clustering to produce a visualization of  the results.
@@ -288,12 +325,29 @@ plot(hc)
 ## Final part 
 # Use the data in the dataframe speechesDF to create the plots:
 # x-axis: speech year, y-axis: # of sentences
+plot(speechesDF$speechYr, speechesDF$sentences)
+
 # x-axis: speech year, y-axis: # of words
+plot(speechesDF$speechYr, speechesDF$words)
+
 # x-axis: speech year, y-axis: # of characters
+plot(speechesDF$speechYr, speechesDF$chars)
+
 # x-axis: speech year, y-axis: average word length (char/word)
+plot(speechesDF$speechYr, (speechesDF$chars/speechesDF$words))
+
 # x-axis: speech year, y-axis: average sentence length (word/sent)
+plot(speechesDF$speechYr, (speechesDF$words/speechesDF$sentence))
 
 # your plot statements below:
+## An intersting behaviour on the last plot where we obviously see the significant chance in
+## the average sentence length over last two centuries.
+
+## On the plot where we examined the number of characters/words/sentences per speech over the period of time
+## we also see interesting trend in the period of 1832-1920 where the number of characters/words/sentences
+## per speech was significantly higher than in the rest of the history. It is interesting that this
+##trend stopped in the period of the Great Depression.
+
 
 
 
