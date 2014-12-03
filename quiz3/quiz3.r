@@ -1,7 +1,7 @@
 # Quiz 3
 # Number of Problems: 6
 # The quiz is out of 22 points.
-
+here=T
 # Function 1 (3 points)
 # Write a function called numAtElements. Your function should take the following
 # arguments
@@ -12,8 +12,9 @@
 #   <num.at>: an integer indicating how many elements of <chvec> contain the "@"
 #     symbol. For example: numAtElements(c('karl', 'k@rl', '@@@')) should return 2
 numAtElements <- function(chvec){
+  x=length(which(( grepl("@", chvec))))
+  return(x)
   
-  # your code here
 }
 
 # Function 2 (3 points)
@@ -25,8 +26,8 @@ numAtElements <- function(chvec){
 #   <newstring>: a character vector of length 1 where all ! symbols have been
 #     replaced by . symbols
 unexclaim <- function(chstring) {
-  
-  # your code here
+  x=gsub("\\!", "\\.", chstring)
+  return(x)
 }
 
 # Function 3 (3 points)
@@ -42,8 +43,9 @@ unexclaim <- function(chstring) {
 #     updated. For example updateDate(c('May, 2010', 'June, 2011'), '2010') should
 #     return 'May, 2015'.
 updateDate <- function(dates, old.yr) {
-  
-  # your code here
+  updated.dates=gsub(old.yr, "2015", dates)
+  updated.dates=updated.dates[which(updated.dates != dates)]
+  return(updated.dates)
 }
 
 # Function 4 (4 points)
@@ -59,8 +61,11 @@ updateDate <- function(dates, old.yr) {
 #                    cat dog
 #                     3   1
 countcatdog<- function(chvec){
-  
-  # your code here
+  cat=length(unlist(gregexpr("cat", tolower(chvec))))
+  dog=length(unlist(gregexpr("dog", tolower(chvec))))
+  total=c(cat,dog)
+  names(total)=c("cat", "dog")
+  return(total)
 }
 
 # Function 5 (3 points)
@@ -72,8 +77,8 @@ countcatdog<- function(chvec){
 # and return the following
 #   <total>: A single number (the sum of all the digits in chvec)
 sumDigits <- function(chvec){
-
-  # your code here
+  x=length(grep("[0-9]", strsplit(chvec, "")[[1]]))
+  return(x)
 }
 
 # Some test cases:
@@ -91,13 +96,29 @@ sumDigits <- function(chvec){
 # "ATTA"; call them DNA1 and DNA2. If there are less than two DNA strings that
 # contains the sequence "ATTA", the function ends immediately and returns the
 # first two elements in DNA.vec
+split.1= function(DNA.vec){
+DNA1 = DNA.vec[grep("ATTA", DNA.vec)[1]]
+
+DNA2 = DNA.vec[grep("ATTA", DNA.vec)[2]]
+if(is.na(DNA1) | is.na(DNA2)){
+  DNA1=DNA.vec[1]
+  DNA2=DNA.vec[2]
+}
+return(unlist(list(DNA1, DNA2)))
+}
+
 
 # Step 2: Split DNA1 into two halves (i.e. strings of length 5 each).
 # (For example, if DNA1 is "ATTATAGCCA", then we have "ATTAT" as the first half
 # and "AGCCA" as the second half)
-
+split.2 = function(DNA.vec){
+  DNA1 = split.1(DNA.vec)[1]
+  DNA2 = split.1(DNA.vec)[2]
+DNA1=c(substr(DNA1, start=1, stop=5), substr(DNA1, start=6, stop=10))
 # Step 3: Split DNA2 into two halves (as in Step 2).
-
+DNA2=c(substr(DNA2, start=1, stop=5), substr(DNA2, start=6, stop=10))
+return(list(DNA1, DNA2))
+}
 # Step 4: Return a character vector of two strings:
 # --first string: the first half of DNA1 combined with the second half of DNA2
 # --second string: the first half of DNA2 combined with the second half of DNA1
@@ -108,12 +129,19 @@ sumDigits <- function(chvec){
 #   <DNA_final>: A character vector of two DNAs
 
 dnaTransform <- function(DNA.vec){
-    
-  # your code here
+    DNA1 = split.2(DNA.vec)[[1]]
+    DNA2 = split.2(DNA.vec)[[2]]
+    a=paste(DNA1[1], DNA2[2], sep="")
+    b=paste(DNA2[1], DNA1[2], sep="")
+    if(all(split.1(DNA.vec) == c(DNA.vec[1], DNA.vec[2])))
+      return(unlist(list(DNA.vec[1], DNA.vec[2])))
+    else
+    return(as.character(c(a, b)))
+  
 }
 
 # Some test cases:
 # all.equal(dnaTransform(c("AAAAAAAAAA", "ATTAGATACT", "ATACATTACG")), c("ATTAGTTACG", "ATACAATACT"))
 # all.equal(dnaTransform(c("ATCGATCGAT", "TCGATCGATT", "ATTTTTTTTT")), c("ATCGATCGAT", "TCGATCGATT"))
-
+#nice
 # End of Quiz 3
