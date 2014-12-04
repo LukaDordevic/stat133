@@ -115,18 +115,18 @@
         }, 
         "hw6": {
             "note": "", 
-            "hash": "9ba3d6c04067a897b33a70aedaa2f37826df723e", 
-            "earned": 7, 
+            "hash": "bc4fe75e8b302747dc250606c8b81abaef42b290", 
+            "earned": 0, 
             "possible": 20, 
             "penalty": 0, 
             "parts": {
-                "bml_functions": {
-                    "possible": 15, 
-                    "earned": 3
-                }, 
                 "bml_rep": {
                     "possible": 5, 
-                    "earned": 4
+                    "earned": 0
+                }, 
+                "bml_functions": {
+                    "possible": 15, 
+                    "earned": 0
                 }
             }
         }, 
@@ -140,6 +140,23 @@
                 "quiz2": {
                     "possible": 26, 
                     "earned": 3
+                }
+            }
+        }, 
+        "hw7": {
+            "note": "", 
+            "hash": "c681bdb2e50dc5a42b559c8bccd10cd4ab8b1a35", 
+            "earned": 8, 
+            "possible": 18, 
+            "penalty": 0, 
+            "parts": {
+                "hw7": {
+                    "possible": 10, 
+                    "earned": 0
+                }, 
+                "hw7_plots": {
+                    "possible": 8, 
+                    "earned": 8
                 }
             }
         }
