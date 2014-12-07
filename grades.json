@@ -145,14 +145,14 @@
         }, 
         "hw7": {
             "note": "", 
-            "hash": "c681bdb2e50dc5a42b559c8bccd10cd4ab8b1a35", 
-            "earned": 8, 
+            "hash": "c620023299c483eb940903c8676ece07cec626d8", 
+            "earned": 13, 
             "possible": 18, 
             "penalty": 0, 
             "parts": {
                 "hw7": {
                     "possible": 10, 
-                    "earned": 0
+                    "earned": 5
                 }, 
                 "hw7_plots": {
                     "possible": 8, 
