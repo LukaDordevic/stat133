@@ -1,7 +1,7 @@
 library(RUnit)
 errMsg = function(err) print(paste("ERROR:", err))
 load('hw4-tests.rda') 
-
+#
 # Implement the function "truncate", a function that trims a given vector by
 # removing the upper and lower specified quantiles. Your function should take
 # the following arguments:
