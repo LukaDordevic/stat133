@@ -114,11 +114,11 @@
             }
         }, 
         "hw6": {
-            "note": "", 
+            "note": "regrade hw6", 
             "hash": "047578d2dcaedc6203bdce7c0ffa52961b62434a", 
-            "earned": 14.4, 
+            "earned": 14, 
             "possible": 20, 
-            "penalty": 3.6, 
+            "penalty": 4, 
             "parts": {
                 "bml_functions": {
                     "possible": 15, 
