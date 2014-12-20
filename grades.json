@@ -132,14 +132,14 @@
         }, 
         "quiz2": {
             "note": "", 
-            "hash": "74f67a891137157c7cac6f37d648b126a2b22464", 
-            "earned": 3, 
+            "hash": "e72c14f5a579b92d352855a7e70b417371e1831e", 
+            "earned": 11.4, 
             "possible": 26, 
-            "penalty": 0, 
+            "penalty": 2.6, 
             "parts": {
                 "quiz2": {
                     "possible": 26, 
-                    "earned": 3
+                    "earned": 13
                 }
             }
         }, 
